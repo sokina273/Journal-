@@ -1,0 +1,315 @@
+:root {
+  --primary-color:  #465d7e;
+  /* main-color: #556b7cc0; */  /* #556b7c; */
+}
+
+body {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background: #fff;
+} 
+
+/* ------------------------ Start The Magazine Header------------------------- */
+
+.magazine-header {  
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color:var(--primary-color);
+}
+
+.magazine-header .content .logo .link {
+  text-decoration: none;
+}
+
+.magazine-header .content .logo .logo-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.magazine-header .content .logo .name {
+  color: #fff;
+  font-size: 13px;
+}
+
+.magazine-header .content .toggle .toggle-btn {
+  color:var(--primary-color);
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.magazine-header .content .toggle .toggle-btn:hover {
+  background-color:var(--primary-color);
+  color: #fff;
+}
+
+/* --------------------------End The Magazine Header-------------------------- */
+
+/* ----------------------------Start Content Section ----------------------------- */ 
+
+ /*.container{
+     position: absolute;       // change me 1  correct: absolute 
+     width: 100%; 
+     height: 100vh; 
+ 
+ }*/
+
+
+ .content{
+  
+  width: 100%;
+  background-size:cover;
+  top: 0;
+  left: 0;
+ }
+
+
+ /* .content-box ::after {
+  content:"";
+  display:block;
+  width: 100%;
+  height:100%;
+  
+  position: absolute;
+  top:0;
+  left:0;
+  opacity: 0.2;
+ } */
+
+
+
+.content-box {
+   height:100vh; 
+    /*background-image:url(../../images/14.jpg); */
+   /* filter: brightness(40%); */  /* كانت عاملة طبقة غامقة على صورة رئيسية  */
+  background-size:cover;
+  background-repeat:no-repeat;
+  position: relative;                /* change me  2 - correct:relative */ 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; 
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  
+}
+
+ .description {
+
+  color: rgb(255, 255, 255);
+  opacity: 10;
+  font-size: 20px;
+
+}
+.container {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+   /*  background-color: rgba(0, 0, 0, 0.274); */
+
+}
+/*
+ img{
+  background-color: rgba(0, 0, 0, 0.384);
+  width: 100%;
+  background-size:cover;
+  top: 0;
+  left: 0; } 
+
+  */
+
+.content-box .content {
+/*  background-color:  rgba(255, 255, 255, 0.089 ); */
+  padding: 80px 20px;
+  margin-top: 90px;
+  border-radius: 10px;
+  height: 100vh;
+}
+.content-box .content .part-one {
+  position: relative;
+
+}
+
+.content-box .content .part-one .child {
+  position: absolute;
+  left: 70px;
+
+}
+
+.content-box .content .part-two {
+  position: relative;
+  height: 400px;
+}
+
+/* Photo Home  */
+.content-box .content .part-two .photo {
+  width: 90%;
+  height: 110%;
+  position: absolute;
+ 
+  left: 110px;
+  top: -20px;
+}
+
+.content-box .content .part-one .title .text {
+  margin-left: 10px;
+  position: relative;
+  color: var(--primary-color);
+}
+
+.content-box .content .part-one .title .text::before {
+  position: absolute;
+  content: "";
+  background-color: var(--primary-color);
+  height: 2px;
+  width: 60%;
+  text-align: center;
+  left: 0;
+  top: 105%;
+}
+
+.content-box .content .part-one .title .icon {
+  color:var(--primary-color);
+}
+
+.content-box .content .part-one .description {
+  color: var(--primary-color);
+  opacity: 100;
+  font-size: 20px;
+  line-height: 1.7;
+  margin-top: 25px;
+}
+
+
+/* ----------------------------End Content Section ----------------------------- */ 
+
+
+/* -----------------------------Start Offcanvas----------------------------- */
+
+.offcanvas {
+  width: 300px !important;
+  background-color:var(--primary-color);
+  border-right: 1px solid rgba(255, 255, 255, 0.089);
+}
+
+.offcanvas .offcanvas-header {
+  display: unset !important;
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.089);
+}
+
+.offcanvas .offcanvas-header .offcanvas-title {
+  font-size: 13px;
+  color: #fff;
+  margin-top: 25px;
+}
+
+.offcanvas .offcanvas-header .close-button {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  border: none;
+  outline: none;
+  font-size: 11px;
+  border: 1px solid #fff;
+  padding: 2px 8px;
+  color: var(--primary-color) !important;
+  background-color: #fff;
+  border-radius: 4px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.offcanvas .offcanvas-header .close-button:hover {
+  background-color: var(--primary-color);
+  color: #fff !important;
+}
+
+.offcanvas .offcanvas-body .links-list .link-item {
+  padding: 8px 0;
+  font-size: 15px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.offcanvas .offcanvas-body .links-list .link-item:hover, .offcanvas .offcanvas-body .links-list .link-item.active {
+  background-color: #fff;
+}
+
+.offcanvas .offcanvas-body .links-list .link-item:hover .link, .offcanvas .offcanvas-body .links-list .link-item.active .link {
+  color: var(--primary-color);
+}
+
+.offcanvas .offcanvas-body .links-list .link-item .link {
+  color: #fff;
+  text-decoration: none;
+}
+
+ /*------------------------------ End Offcanvas ----------------------------------*/
+
+  /* ---------------------------------start footer------------------------------- */ 
+
+.magazine-footer {
+  background-color:var(--primary-color);
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+
+}
+
+.magazine-footer .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+  cursor: pointer;
+}
+
+.magazine-footer .social-media i {
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.089);
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.magazine-footer .social-media i:hover {
+   -webkit-transform: rotate(360deg);
+   -ms-transform: rotate(360deg);
+   transform: rotate(360deg);
+   color:  #fff; 
+}
+
+.magazine-footer .copright p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.magazine-footer .copright a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ /*-----------------------------------End footer -----------------------------------*/
+
+
+

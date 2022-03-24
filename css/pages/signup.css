@@ -1,0 +1,304 @@
+:root {
+  --primary-color: #465d7e;
+  
+}
+
+body {
+  background-color: #fff;
+   height: 100%;
+  /* display: grid;
+  place-items:center; */
+  text-align: center;
+  background:#dde1e7; 
+}
+
+.parent {
+  height:100vh;
+  
+
+}
+
+/*-------------------- magazine-footer-------------------- */
+.child-1{
+  height: 5vh;
+}
+.child-2 {
+  
+  height: 90vh;
+  position:relative;
+}
+.child-3 {
+  height: 5vh;
+}
+
+
+/*------------------------- Start The Magazine Header -------------------------*/
+
+.magazine-header {
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 40;
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+.magazine-header .content .logo .link {
+  text-decoration: none;
+}
+
+.magazine-header .content .logo .logo-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.magazine-header .content .logo .name {
+  color: #fff;
+  font-size: 12px;
+}
+
+.magazine-header .content .toggle .toggle-btn {
+  color:  var(--primary-color);
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.magazine-header .content .toggle .toggle-btn:hover {
+  background-color:  var(--primary-color);
+  color: #fff;
+}
+
+
+/*---------------------------End The Magazine Header ---------------------------*/
+
+
+/* ------------------------------ Start Form ------------------------------- */
+
+.big-form {
+  /* display: flex;
+  justify-content: center; */
+
+  width: 500px;
+  height: 660px;  /* with me  */
+  background: #dde1e7;
+  border-radius: 10px;
+  padding: 40px 30px;      /* 40 30 */
+  box-shadow: -3px -3px 7px #ffffff73,
+               2px 2px 5px rgba(94,104,121,0.288);
+   position: absolute;
+   top: 80px; 
+   left:30%;           
+}
+.big-form .text {
+  font-size: 33px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  color: #595959;
+}
+.big-form .field {
+  height: 50px;
+  width: 100%;
+  margin-top:20px;
+ /*  display: flex; */
+ position:relative;
+
+}
+.field input {
+  height: 100%;
+  width: 100%;
+  
+  padding-left: 45px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  color: #595959;
+  background: #dde1e7;
+  border-radius: 25px;
+  box-shadow: inset 2px 2px 5px #babecc,
+              inset -5px -5px 10px #ffffff73;
+}
+
+.field input:focus {
+  box-shadow: inset 1px 1px 2px #babecc,
+              inset -1px -1px 2px #ffffff73;
+}
+
+.field:nth-child(2){
+   margin-top: 20px;          /* 20px  */
+}
+.field i {
+  position: absolute;
+  width: 50px;
+  line-height: 50px;
+  color: #595959;
+}
+.field label {
+   position: absolute ;
+   top: 50%;
+   left: 45px;
+   pointer-events: none;
+   color: #666666;
+   transform: translateY(-50%);
+}
+
+
+.field input:valid ~ label {
+  opacity: 0;
+}
+/* .forgot-pass {
+  text-align: left;
+  margin: 10px 0 10px 5px;
+} */
+/* .forgot-pass a{
+  font-size: 16px;
+  color:#3498db;
+  text-decoration: none;
+} */
+
+/* .forgot-pass:hover a {
+  text-decoration: underline;
+} */
+button {
+  margin: 15px 0;
+  width: 100%;
+  height: 50px;
+  color:#595959;
+  font-size: 18px;
+  font-weight: 600px;
+  background-color: #dde1e7;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  margin-top: 35px;
+  box-shadow: 2px 2px 5px #babecc,
+              -5px -5px 10px #ffffff73;
+}
+/* ---------------------------- End form ------------------------------ */
+
+/* -------------------Start Footer --------------------- */
+.magazine-footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.magazine-footer .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+  cursor: pointer;
+}
+
+.magazine-footer .social-media i {
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.magazine-footer .social-media i:hover {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+  color: var(--primary-color);
+  background-color: #fff;
+}
+
+.magazine-footer .copright p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.magazine-footer .copright a {
+  text-decoration: none;
+  color: #fff;
+
+}
+
+/* -----------------------------End Footer ------------------------------- */
+
+
+
+/
+
+
+/*----------------------------- Start Offcanvas -----------------------------*/
+
+.offcanvas {
+  width: 300px !important;
+  background-color:  var(--primary-color);
+  border-right: 1px solid #fff;
+}
+
+.offcanvas .offcanvas-header {
+  display: unset !important;
+  position: relative;
+  border-bottom: 1px solid #fff;
+}
+
+.offcanvas .offcanvas-header .offcanvas-title {
+  font-size: 11px;
+  color: #fff;
+  margin-top: 25px;
+}
+
+.offcanvas .offcanvas-header .close-button {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  border: none;
+  outline: none;
+  font-size: 11px;
+  border: 1px solid #fff;
+  padding: 2px 8px;
+  color:  var(--primary-color) !important;
+  background-color: #fff;
+  border-radius: 4px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.offcanvas .offcanvas-header .close-button:hover {
+  background-color:  var(--primary-color);
+  color: #fff !important;
+}
+
+.offcanvas .offcanvas-body .links-list .link-item {
+  padding: 8px 0;
+  font-size: 12px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.offcanvas .offcanvas-body .links-list .link-item:hover, .offcanvas .offcanvas-body .links-list .link-item.active {
+  background-color: #fff;
+}
+
+.offcanvas .offcanvas-body .links-list .link-item:hover .link, .offcanvas .offcanvas-body .links-list .link-item.active .link {
+  color:  var(--primary-color);
+}
+.offcanvas .offcanvas-body .links-list .link-item .link {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*---------------------------- Start Offcanvas ----------------------------*/
+
+
+
