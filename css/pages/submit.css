@@ -1,8 +1,7 @@
 
 :root {
-    --primary-color: #595959;
-
-    color:#465d7e;
+     --primary-color: #595959;
+     color:#465d7e;
 }
 
 *,
@@ -11,11 +10,11 @@
     box-sizing:border-box;
 }
 body {
-    background-image:url(../../images/2.jpg);
+    background-color:   #dde1e7;
     width:100%;
     height: 100%;
     margin: 0;
-   background-size: cover;
+    background-size: cover;
     /*display: grid;*/
     background-repeat:no-repeat;
    /* place-items: center;*/
@@ -46,16 +45,7 @@ label {
 
 }
 
-width: 100%;
-padding-left: 45px;
-font-size: 18px;
-outline: none;
-border: none;
-color: #595959;
-background: #dde1e7;
-border-radius: 25px;
-box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73;
-}
+
 
 
 
@@ -157,7 +147,26 @@ select option [value="1"] {
 }*/
 
 input {
-    display: block;
+
+    background: rgb(221, 225, 231);
+    width: 590px;
+    height: 70px;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 10px;
+    color: rgb(89, 89, 89);
+    font-size: 18px;
+    outline: none;
+    border: none;
+    box-shadow: rgb(186 190 204) 2px 2px 5px inset, rgb(255 255 255 / 45%) -5px -5px 10px inset;
+}
+
+
+
+
+
+
+    /* display: block;
     width: 100%;
     font-size: 20px;
     padding: 20px;
@@ -166,9 +175,14 @@ input {
     color:  #595959;
     border: 1px solid rgba(255, 255, 255, 0.4);
     background: rgba(255, 255, 255, 0.089);
-    border-radius: 10px;
+    border-radius: 10px; */
 
 }
+
+
+
+
+
 
 input:focus{
     outline: 1px solid rgb(86, 125, 146);
@@ -278,7 +292,12 @@ input:focus{
 /* End Tap 5 Manuscript data  */
 
 /* Form */
+
+
+
+
 .Registration_form{
+
     width: 100%;
     height: 100vh;
     display: flex;
@@ -286,18 +305,23 @@ input:focus{
     align-items: center;
     background-color: rgba(255, 255, 255, 0);
 }
-.form {
-    width: clamp(600px, 100%, 700px);
-    height:95vh;
-    margin:  auto;
-    /* border: 1px solid #f1eeee; */
-    background:rgb(184, 177, 177);            /* edit new 23/3/2022 */
 
-    -webkit-tap-highlight-color: transparent;
-    
-    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgb(94 104 121 / 29%);
-    border-radius: 0.35rem;
-    padding: 1.5rem;
+
+
+.form {
+  
+        width: 700px;
+        height: 800px;
+        background: #dde1e7;
+        border-radius: 15px;
+        padding: 40px 30px;
+        box-shadow: -3px -3px 7px #ffffff73,
+                    2px 2px 5px rgba(94,104,121,0.288);
+       
+        position: absolute;
+        top: 35px;
+        left: 25%;
+
 }
 .form h1{
     color: #595959;
@@ -341,29 +365,64 @@ input:focus{
     gap: 2rem;
 }
 .btn-first{
-    display: block !important;
-    width: 100%;
-    margin-top: 100px;
-}
+
+        display: block !important;
+        margin: 35px 0px 15px;
+        width: 100%;
+        height: 50px;
+        color: rgb(89, 89, 89);
+        font-size: 18px;
+        background-color: rgb(221, 225, 231);
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: rgb(186 190 204) 2px 2px 5px, rgb(255 255 255 / 45%) -5px -5px 10px;
+        margin-top:30%;
+   
+    }
+    
 .btns-group a , .btns-group input[type = "submit"]{
-    background-color:#465d7e98;
+    /* background-color:#465d7e98; */
     color: var(--primary-color);
     font-size: 23px;
     font-weight: bold;
 }
 .btn {
-    padding: 0.75rem;
-    display: block;
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.089);
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    text-align: center;
-    border-radius:10px;
+    
+    display: block !important;
+    margin: 35px 0px 15px;
+    width: 100%;
+    height: 50px;
+    color: rgb(89, 89, 89);
+    font-size: 18px;
+    background-color: rgb(221, 225, 231);
+    border: none;
     cursor: pointer;
+    border-radius: 10px;
+    box-shadow: rgb(186 190 204) 2px 2px 5px, rgb(255 255 255 / 45%) -5px -5px 10px;
+    margin-top:15%;
+    text-decoration: none;
+    text-align: center;
     transition: .5s;
     clear: both;
+    padding: 0.75rem;
+
+
+
+
+   /*  
+    display: block;
+     */
+    /*  background-color: #dde1e7; */
+    /* background-color: rgba(255, 255, 255, 0.089); */
+    /* border: 1px solid rgba(255, 255, 255, 0.4); */
+    
+
+    
+    
+    
 }
-.btn:focus{outline: 1px solid rgb(86, 125, 146);
+/* .btn:focus{outline: 1px solid rgb(86, 125, 146); */
 }
 .btn:hover {
     box-shadow: 0 0 0 1px , 0 0 0 1px rgb(86, 125, 146);

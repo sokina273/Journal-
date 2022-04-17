@@ -11,13 +11,13 @@ body {
 /* ------------------------ Start The Magazine Header------------------------- */
 
 .magazine-header {  
-  padding: 10px 0;
+  padding: 25px 0;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
   width: 100%;
-  background-color:var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 .magazine-header .content .logo .link {
@@ -33,6 +33,10 @@ body {
 .magazine-header .content .logo .name {
   color: #fff;
   font-size: 13px;
+}
+.toggle {
+  margin-top: 10px;
+  margin-left: 100px;
 }
 
 .magazine-header .content .toggle .toggle-btn {
@@ -54,12 +58,12 @@ body {
 
 /* ----------------------------Start Content Section ----------------------------- */ 
 
- /*.container{
-     position: absolute;       // change me 1  correct: absolute 
+ .container{
+     position: absolute;      /*  // change me 1  correct: absolute  */
      width: 100%; 
      height: 100vh; 
  
- }*/
+ }
 
 
  .content{
@@ -132,7 +136,7 @@ body {
 .content-box .content {
 /*  background-color:  rgba(255, 255, 255, 0.089 ); */
   padding: 80px 20px;
-  margin-top: 90px;
+  margin-top: 20px;          /**/
   border-radius: 10px;
   height: 100vh;
 }
@@ -271,7 +275,8 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 20px 0;
+  height: 60px;
+  /* padding: 20px 0; */
 
 }
 

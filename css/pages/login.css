@@ -4,7 +4,7 @@
 
 * {
   margin: 0;
-  padding:0;
+  /* padding:0; */
   box-sizing: border-box;
   font-family: 'Pooppins', sans-serif ;
 }
@@ -40,13 +40,21 @@ body {
 /* .child-3 {
   position: absolute;
   
+}*/
+.magazine-footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
 }
-.child-3 .magazine-footer {
+/* .magazine-footer {
   position: relative;
   top: 510px;
   right: 500px;
   width: 1500px;
-}
+} */
 /* -----------------form--------------------- */
 /* .child-2 {
   position: relative;
@@ -140,7 +148,7 @@ body {
 .forgot-pass:hover a {
   text-decoration: underline;
 }
-button {
+.btn-login {
   margin: 15px 0;
   width: 100%;
   height: 50px;
@@ -187,6 +195,10 @@ button {
 .magazine-header .content .logo .name {
   color: #fff;
   font-size: 12px;
+}
+.toggle {
+  margin-top: 10px;
+  margin-left: 100px;
 }
 
 .magazine-header .content .toggle .toggle-btn {
